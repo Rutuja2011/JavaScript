@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Palindrome number </h1>
+    <button onclick ="palindrome()">Palindrome</button>
+    <script>
+       function palindrome()
+         {
+         let n = parseInt(prompt("Enter the number to check palindrome or not:"));
+         let temp = n;
+         let res = 0;
+         while(parseInt(temp)!=0)//121!=0
+         {
+               rem =parseInt(temp % 10); //121%10=1 12%10=2
+               res = (res* 10) + rem; // 0*10 + 1= 1 
+               temp = temp/10; //121 /10 =12
+         }
+         if(res == n)
+         {
+            alert("Number is palindrome");
+         }
+         else{
+            alert("Number is not palindrome");
+         }
+       }      
+    </script>
+</body>
+</html>

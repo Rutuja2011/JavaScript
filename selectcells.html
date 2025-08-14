@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table id="main" border ="">
+        <tr>
+            <td id = "td1">1</td>
+            <td id = "td2">2</td>
+            <td id = "td3">3</td>
+        </tr>
+
+        <tr>
+            <td id = "td4">4</td>
+            <td id = "td5">5</td>
+            <td id = "td6">6</td>
+        </tr>
+         
+        <tr>
+            <td id = "td7">7</td>
+            <td id = "td8">8</td>
+            <td id = "td9">9</td>
+        </tr>
+    </table>
+
+    <div>
+       <label for ="">Choose the color</label>
+       <input id="mycolor" type="color">
+       <label for="">Enter your choice</label>
+       <input id="mychoice" type="text"><br>
+       <button onclick ="changeColor()">Change Color</button>
+
+      
+    </div>
+
+    <script>
+
+        function changeColor()
+        {
+             var color = document.getElementById("mycolor").value;
+             var choice = document.getElementById("mychoice").value;
+
+              console.log(color);
+              console.log(choice);
+              
+              switch(choice)
+              {
+                case "1": {
+                           document.getElementById("td1").style.backgroundColor = color;
+                           break;
+                }
+                case "2": {
+                           document.getElementById("td2").style.backgroundColor = color;
+                           break;
+                } 
+                case "3": {
+                          document.getElementById("td3").style.backgroundColor = color;
+                           break;
+                }
+                case "4": {
+                           document.getElementById("td4").style.backgroundColor = color;
+                           break;
+                }
+                case "5": {
+                           document.getElementById("td5").style.backgroundColor = color;
+                           break;
+                }
+                case "6": {
+                           document.getElementById("td6").style.backgroundColor = color;
+                           break;
+                }
+                case "7": {
+                           document.getElementById("td7").style.backgroundColor = color;
+                           break;
+                }
+                case "8": {
+                           document.getElementById("td8").style.backgroundColor = color;
+                           break;
+                }
+                case "9": {
+                           document.getElementById("td9").style.backgroundColor = color;
+                           break;
+                }
+              }
+             
+
+
+        }
+
+    </script>
+</body>
+</html>

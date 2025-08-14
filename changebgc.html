@@ -1,0 +1,48 @@
+<!--Change The Table Background Color-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table id="main" border ="">
+        <tr>
+            <td id = "td1">1</td>
+            <td id = "td2">2</td>
+            <td id = "td3">3</td>
+        </tr>
+
+        <tr>
+            <td id = "td4">4</td>
+            <td id = "td5">5</td>
+            <td id = "td6">6</td>
+        </tr>
+         
+        <tr>
+            <td id = "td7">7</td>
+            <td id = "td8">8</td>
+            <td id = "td9">9</td>
+        </tr>
+    </table>
+
+    <div>
+       <label for ="">Choose the color</label>
+       <input id="myColor" type="color">
+       <button onclick ="changeColor()">Change Color</button>
+    </div>
+
+    <script>
+
+        function changeColor()
+        {
+            var color = document.getElementById("myColor").value;
+
+            console.log(color);
+
+            document.getElementById("main").style.backgroundColor=color;
+        }
+    </script>
+  </body>
+  </html>
