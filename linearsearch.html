@@ -1,0 +1,42 @@
+<!-- Search for an array in linear search-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>Search for an array in linear search</h1>
+    <button onclick="search()">Linear Search</button>
+    <script>
+
+        let arr=[3,5,6,1,8,9];
+        console.log(arr);
+
+        function search()
+        {
+            
+            let flag=0;
+            let i;
+            let n=parseInt(prompt("Enter number to search :"));
+
+            for( i =0 ; i<arr.length; i++)
+            {
+             if(arr[i]==n)
+             {
+                flag = 1;
+                break;
+             }
+            }
+            if(flag == 1)
+            {
+               console.log("Number is found at index : "+i);
+            }
+             else{
+                console.log("number is not found");
+             }
+        }
+    </script>
+ </body>
+ </html>

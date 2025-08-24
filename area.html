@@ -1,0 +1,24 @@
+<!--Calculate the area of circle using the formula pie*r^2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        function calculate()
+        {
+            let r = parseFloat(prompt("Enter the radius"));
+
+            area = 3.14 * r * r;
+
+            alert("Area of circle:: "+area);
+        }
+    </script>
+    
+</body>
+</html>

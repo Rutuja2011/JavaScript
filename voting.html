@@ -1,0 +1,26 @@
+<!--Check whether the person is eligible for voting-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="voting()">Voting</button>
+    <script>
+        function voting()
+        {
+            let age = parseInt(prompt("Enter the age of person"));
+
+            if(age>=18)
+            {
+                console.log("Person is eligible for voting");
+            }
+            else{
+                console.log("Person is not eligible for voting");
+            }
+        }
+    </script>
+</body>
+</html>

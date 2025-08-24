@@ -1,0 +1,46 @@
+<!--Assign discount percentages based on the total purchase amount -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="discount()">Discount</button>
+    <script>
+        function discount()
+        {
+            let amount = parseFloat(prompt("Enter the total purchase amount::"));
+            let discount = 0;
+            if(amount >= 10000)
+            {
+                discount = 30 ;
+            }
+            else if(amount >= 5000)
+            {
+                discount = 25;
+            }
+            else if(amount>=1000)
+            {
+                discount = 20 ;
+            }
+            else if(amount>=500)
+            {
+                discount = 10;
+            }
+            else if(amount >= 100)   
+            {
+                discount = 5;
+            }
+            else{
+                discount = 0;
+            }
+
+            let finalAmount = amount - (amount * discount/100);
+
+            alert(`Purchase amount :: ${amount} \nDiscount :: ${discount}% \n Final amount with discount :: ${finalAmount}`);
+        }
+    </script>
+</body>
+</html>

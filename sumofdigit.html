@@ -1,0 +1,26 @@
+<!--Calculate sum of digits of number-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sum_of_digit()">Sum of Digit</button>
+    <script>
+        function sum_of_digit()
+        {
+            let n = parseInt(prompt("Enter the number :: "));
+            let sum = 0;
+            while(parseInt(n)!=0)//121!=0
+            {   
+                let d =parseInt(n%10);// 123%10 = 3   12%10=2  1%10=1
+                sum = sum + d; //0+3=3  3+2=5  5+1=6
+                n = n/10; //123/10=12  12/10=1 1/10=0
+            }
+            console.log(sum);
+        }
+    </script>
+</body>
+</html>

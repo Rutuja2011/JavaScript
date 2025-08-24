@@ -1,0 +1,29 @@
+<!--Determine if a triangle is valid based on its angles-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="triangle()">Triangle</button>
+    <script>
+        function triangle()
+        {
+             let angleA = parseInt(prompt("Enter the angle A :: "));
+             let angleB = parseInt(prompt("Enter the angle B :: "));
+             let angleC = parseInt(prompt("Enter the angle C :: "));
+
+             if(angleA + angleB +angleC == 180)
+             {
+                alert("Triangle is valid");
+             }
+             else{
+                alert("Triangle is not valid");
+             }
+           
+        }  
+    </script>
+</body>
+</html>

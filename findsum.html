@@ -1,0 +1,26 @@
+<!--Find the sum of first n natural numbers-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="findsum()">Find sum</button>
+    <script>
+        function findsum()
+        {
+            let n = parseInt(prompt("Enter the number to find sum of that natural number::"));
+
+            let sum = 0;
+            for(let i = 1; i<=n; i++)
+            {
+                sum = sum + i;
+
+            }
+            console.log(sum);
+        }
+    </script>
+</body>
+</html>

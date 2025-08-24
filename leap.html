@@ -1,0 +1,26 @@
+<!--Check whether the year is leap or not-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="leap()">Leap Year</button>
+    <script>
+        function leap()
+        {
+            let year = parseInt(prompt("Enter the year :"));
+
+            if(year % 4 == 0)
+            {
+                alert(`${year} is leap year`);
+            }
+            else{
+                alert(`${year} is not leap year`);
+            }
+        }
+    </script>
+</body>
+</html>

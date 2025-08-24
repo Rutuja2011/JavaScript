@@ -1,0 +1,29 @@
+<!--Swap two numbers using arithmetic operators(without using a third variable)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="swap()">Swap</button>
+    <script>
+        function swap()
+        {
+            let a = parseInt(prompt("Enter the number::"));
+            let b = parseInt(prompt("Enter the number::"));
+
+            console.log("Before swapping : a = " ,a, "b = ",b);
+
+            a = a + b;
+            b = a - b;
+            a = a - b;
+
+            console.log("After swapping : a = " ,a, "b = ",b);
+                
+            
+        }
+    </script>
+</body>
+</html>

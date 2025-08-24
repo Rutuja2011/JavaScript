@@ -1,0 +1,31 @@
+<!--Implement a function to reverse a given number-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Print reverse number</h1>
+    <button onclick="reverse()">Reverse</button>
+
+    <script>
+        function reverse()
+        {
+            let n = parseInt(prompt("Enter the number to print reverse of its"));
+
+            let temp = n;
+            let res = 0;
+    
+         while(parseInt(temp)!=0)//121!=0
+         {
+               rem =parseInt(temp % 10); //121%10=1 12%10=2 // 0*10 + 1= 1 
+               temp = temp/10; //121 /10 =12
+               res = (res* 10) + rem; // 0*10 + 1= 1
+         }
+         console.log("Reverse of given number:: " +res);
+        }
+    </script>   
+</body>
+</html>

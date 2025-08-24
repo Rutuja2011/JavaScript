@@ -1,0 +1,39 @@
+<!--Print the Fibonacci series up to terms-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fibonacciseries()">Fibonacci Series</button>
+    <script>
+        function fibonacciseries()
+        {
+            let f = 0;
+            let s = 1;
+            let n = parseInt(prompt("Enter the number of terms::"));
+            
+            /*for(let i=1 ; i<=n ; i++)
+             {
+                console.log(f);
+                let t = f + s;
+                f = s;
+                s = t;
+
+             }*/
+            let i = 1;
+            while(i<=n)
+        {
+            console.log(f);
+                let t = f + s;
+                f = s;
+                s = t;
+                i++;
+
+        }
+        }
+    </script>
+</body>
+</html>
